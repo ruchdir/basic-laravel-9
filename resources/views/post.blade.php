@@ -17,7 +17,6 @@
             <div class="card-body">
                 <h2 class="card-title">{{ $post->post_text }}</h2>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-                <a class="btn btn-primary" href="#!">Read more →</a>
             </div>
         </div>
     </div>
