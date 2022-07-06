@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
     //
     public function index(){
-        $allCategories = ['C1', 'C2', 'C3'];
+        $allCategories = DB::table('categories')->get();
         return view('index', ['categories' => $allCategories]);
     }
 }
