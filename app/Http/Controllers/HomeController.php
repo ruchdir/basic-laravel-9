@@ -12,7 +12,9 @@ class HomeController extends Controller
     //
     public function index(){
         $categories = Category::all();
-        $posts = Post::latest()->get();
+        $posts = Post::where('category_id', request('category_id'))
+            ->latest()
+            ->get();
         
         return view('index', compact('categories', 'posts'));
     }
