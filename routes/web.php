@@ -20,4 +20,4 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::view('/about', view:'about')->name('about');
 Route::view('/contact', view:'contact')->name('contact');
 
-Route::get('/posts/{postId}', [PostController::class, 'show'])->name('posts.show');
+Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
